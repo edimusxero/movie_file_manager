@@ -13,7 +13,7 @@ from colorama import Fore, Back, Style
 
 
 config = configparser.ConfigParser()
-config.read('/usr/local/lib/movies/tmdb.ini')
+config.read('<path to my config.ini>')
 
 tmdb.API_KEY = config['movie']['API']
 search = tmdb.Search()
